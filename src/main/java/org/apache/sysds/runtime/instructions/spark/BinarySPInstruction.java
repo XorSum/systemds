@@ -185,7 +185,7 @@ public abstract class BinarySPInstruction extends ComputationSPInstruction {
 
 		if ( TempPersist.rddName!=null && TempPersist.rddName.equals(output.getName())) {
 			System.out.println("Persist "+output.getName());
-			out = out.persist(StorageLevel.MEMORY_AND_DISK());
+			out = out.persist(StorageLevel.MEMORY_AND_DISK_SER());
 			TempPersist.rdds.add(out);
 		}
 
