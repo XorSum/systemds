@@ -50,7 +50,7 @@ public class RewriteCommonSubexpressionElimination extends HopRewriteRule
 	
 	@Override
 	public ArrayList<Hop> rewriteHopDAGs(ArrayList<Hop> roots, ProgramRewriteStatus state) 
-	{
+	{/*
 		if( roots == null )
 			return null;
 		
@@ -70,13 +70,13 @@ public class RewriteCommonSubexpressionElimination extends HopRewriteRule
 		
 		if( cseMerged > 0 )
 			LOG.debug("Common Subexpression Elimination - removed "+cseMerged+" operators.");
-		
+		*/
 		return roots;
 	}
 
 	@Override
 	public Hop rewriteHopDAG(Hop root, ProgramRewriteStatus state) 
-	{
+	{/*
 		if( root == null )
 			return null;
 		
@@ -94,7 +94,7 @@ public class RewriteCommonSubexpressionElimination extends HopRewriteRule
 		
 		if( cseMerged > 0 )
 			LOG.debug("Common Subexpression Elimination - removed "+cseMerged+" operators.");
-		
+		*/
 		return root;
 	}
 	
